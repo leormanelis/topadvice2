@@ -1,0 +1,30 @@
+label[for=full_name],
+label[for=message]
+{
+  text-align: center;
+  font-family: Verdana;
+  font-size: 18px;
+}
+label{
+  width: 225px;
+  vertical-align: top;
+}
+.container{
+text-align: center;
+margin: 0 auto;
+width: 1024px; 
+}
+.section {
+  text-align: right;
+}
+.section input{
+  width: 250px;
+}
+.section textarea{
+  width: 250px;
+}  
+.form {
+  width: 655px;
+  }
+
+

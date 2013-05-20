@@ -1,0 +1,31 @@
+<div class="container">  
+<a href="/"><img src="/assets/top_advice_logo.png"/></a>
+
+<p>Where people can share the best advice they ever recieved.</p>
+<div class="form">
+  <%= form_for @advice,:url=>mains_path do |f| %>
+  <div class="section">
+  <%= f.label :full_name %>
+  <%= f.text_field :full_name %>
+</div>
+<br>
+<div class="section">
+  <%= f.label :message,"Please Share your Advice..." %>
+  <%= f.text_area :message %>
+</div>
+<br>
+  <%= f.submit %>
+<% end %>
+  <% for message in @messages %>
+  <p><%= message.message %></p>
+<% end %>
+
+
+</div>
+
+
+
+</div> 
+
+
+
