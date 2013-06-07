@@ -1,31 +1,49 @@
-<div class="container">  
-<a href="/"><img src="/assets/top_advice_logo.png"/></a>
-
-<p>Where people can share the best advice they ever recieved.</p>
-<div class="form">
-  <%= form_for @advice,:url=>mains_path do |f| %>
-  <div class="section">
-  <%= f.label :full_name %>
-  <%= f.text_field :full_name %>
-</div>
-<br>
-<div class="section">
-  <%= f.label :message,"Please Share your Advice..." %>
-  <%= f.text_area :message %>
-</div>
-<br>
-  <%= f.submit %>
-<% end %>
-  <% for message in @messages %>
-  <p><%= message.message %></p>
-<% end %>
-
-
-</div>
-
-
-
-</div> 
-
-
-
+      <div class="row-fluid">
+        
+        
+        
+      </div>
+    
+      
+    
+      <div class="footer">
+        
+      </div>
+    
+    <div class="container">
+      <div class="masthead">
+        
+        <!-- /.navbar -->
+      </div>
+    
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1 class="">Top Advice</h1>
+        <p class="lead">What is the best advice you ever got?</p>
+        <a class="btn btn-large btn-success" href="screen-028bf16fa4.html">Get started today</a>
+      </div>
+    
+      <hr class="">
+    
+      <!-- Example row of columns -->
+      
+    
+      <div class="row-fluid">
+        
+        <div class="span3">
+          <h2 class="">Gordon Ramsey, chef</h2>
+          <p class=""><span style="color: rgb(40, 40, 40); font-family: arial, helvetica, sans-serif; " class="">Put your head down and work hard. Don't wait for things to happen. Make them happen.&nbsp;</span><br></p>
+          <p class=""></p>
+       </div><div class="span3">
+          <h2 class="">Peter Barron, google</h2>
+          <p class=""><span style="color: rgb(40, 40, 40); font-family: arial, helvetica, sans-serif; " class="">“The man who never made a mistake never made anything.”</span><br></p>
+          <p class=""></p>
+       </div>
+        <div class="span3">
+          <h2 class="">unknown</h2>
+          <p>When all else fails, take a nap.&nbsp;</p>
+          <p class=""></p>
+        </div>
+      <div class="span3"><h3 class="">Warren Buffett</h3><p class="">It takes 20 years to build a reputation. It takes 5 minutes to ruin. If you think about that, you'll do things differently.&nbsp;</p></div></div><hr class="">
+    
+  

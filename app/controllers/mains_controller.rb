@@ -1,7 +1,5 @@
 class MainsController < ApplicationController
   def index
-    @advice = Advice.new
-    @messages = Advice.all
   end
   
   def create
