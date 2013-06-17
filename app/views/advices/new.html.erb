@@ -10,11 +10,15 @@
       </div>
    </div>
    </div>
-   <form>
+   <% for error in @advice.errors.full_messages %>
+      <%= error %> <br><br>
+   <% end %>
+
+   <form action="/advices" method="post">
       <div class="control-group">
          <label class="control-label">Name:</label>
          <div class="controls jetstrap-highlighted">
-            <input type="text" class="">
+            <input type="text" class="" name="[advice][full_name]">
             <div class="control-group">
                <div class="controls"></div>
             </div>
@@ -29,7 +33,7 @@
                <div class="controls">
                   <div class="control-group">
                      <label class="control-label">Your Top Advice:</label>
-                     <div class="controls"><textarea class=""></textarea></div>
+                     <div class="controls"><textarea class="" name="[advice][message]"></textarea></div>
                   </div>
                </div>
             </div>

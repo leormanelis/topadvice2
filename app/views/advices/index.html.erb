@@ -6,7 +6,6 @@
 
 <ol style="font-size: 16px">
 <% for advice in @advices %>
- <li><%= advice.message %>
+ <li><%= advice.full_name %> - <%= advice.message %> </li>
 <% end %>
-</li>
 </ol>
