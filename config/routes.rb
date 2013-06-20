@@ -64,5 +64,6 @@ resource  :mailing_list
 get  "/admin"       => "admin#login",      as: "login"
 post "/admin_login" => "admin#login_post", as: "login_post"
 post "/logout"      => "admin#logout"
+get  "/admin_edit"  => "admin#edit",       as: "admin_edit"
 
 end
