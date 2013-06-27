@@ -7,21 +7,21 @@
    </h3>
    </div>
    
-  <form>
+<%= form_tag(contact_path) do %> 
       <div class="control-group">
          <label class="control-label">
            
             Name:
          </label>
          <div class="controls">
-            <input type="text" class="">
+            <input type="text" class="" name="name">
             <div class="control-group">
                <label class="control-label">Email:</label>
                <div class="controls">
-                  <input type="text">
+                  <input type="text" name="email">
                   <div class="control-group">
                      <label class="control-label">What's on your mind?</label>
-                     <div class="controls"><textarea class=""></textarea></div>
+                     <div class="controls"><textarea class="" name="body"></textarea></div>
                   </div>
                   <div class="control-group">
                      <div class="controls"></div>
@@ -33,6 +33,7 @@
             </div>
          </div>
       </div>
-   </form>
-   <button type="submit" class="btn">Submit</button>
+      <button type="submit" class="btn">Submit</button>
+   <%end%>
+   
 </div> <!-- /container -->

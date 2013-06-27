@@ -35,5 +35,10 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'debugger'
+ gem 'debugger'
 
+gem 'pony'
+
+gem 'rails-footnotes', '>= 3.7.9', :group => :development
+
+gem 'will_paginate','~>3.0.0'

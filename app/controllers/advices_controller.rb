@@ -1,10 +1,9 @@
 class AdvicesController < ApplicationController
   def index
   @advices = Advice.all
+  @advices = Advice.order("id").paginate(:page => params[:page], :per_page => 10)
   end
   
-  def show
-  end
   
   def create 
   	@advice = Advice.new params["advice"]

@@ -49,11 +49,16 @@
             </div>
             <!-- /.navbar -->
          </div>
+         <% if flash[:notice].present? %>
+         <div class="alert alert-success">   
+          <%= flash[:notice] %>
+         </div>
+         <% end %>
          <%= yield %>
       <hr class="">
       </div> <!-- /container -->
          <div class="footer text-center">
-            <p class="">Created with <a href="www.jetstrap.com" class="">Jetstrap</a> by Leor Manelis 2013</p>
+            <p class="">Created with <a href="www.jetstrap.com" class="">Jetstrap</a> by <a href="www.leormanelis.com" class="">Leor Manelis</a> 2013</p>
          </div>
       <style>
          body {
