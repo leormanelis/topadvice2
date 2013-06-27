@@ -10,6 +10,5 @@ post "/admin_login" => "admin#login_post", as: "admin_edit"
 get  "/admin_edit"  => "admin#admin_edit", as: "admin_edit"
 post "/delete/:id"  => "admin#delete",     as: "admin_delete"
 post "/logout"      => "admin#logout"
-resources :test
-
+get  "/thankyou"    => "contacts#thankyou",as: "thankyou"
 end
