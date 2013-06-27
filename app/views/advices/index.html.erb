@@ -4,7 +4,7 @@
      <p class="">Check out some of our most recent entries.&nbsp;</p>
    </div>
 
-<ol style="font-size: 16px">
+<ol start="<%= params[:page].to_i * 5 - 4 %>" style="font-size: 16px">
 <% for advice in @advices %>
  <li><%= advice.full_name %> - <%= advice.message %> </li>
 <% end %>
